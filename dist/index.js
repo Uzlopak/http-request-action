@@ -5143,7 +5143,7 @@ const convertToJSON = (value) => {
  * @returns {FormData}
  */
 const convertToFormData = (data, files) => {
-  formData = new FormData()
+  const formData = new FormData()
 
   for (const [key, value] of Object.entries(data)) {
     formData.append(key, value)
